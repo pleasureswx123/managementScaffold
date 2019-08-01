@@ -1,0 +1,37 @@
+build:
+
+  # 配置node服务环境
+  env:
+    node: '/usr/local/node/node-v8.9.4/bin/node'
+    npm: '/usr/local/node/node-v8.9.4/bin/npm'
+
+  # 静态资源上传CDN
+  static-cdn:
+    module:
+      - dist: './output'
+        release: 'fe-static/{{projectName}}'
+
+  # 编译命令
+  command:
+    - 'npm run clear'
+    - 'npm run init:install'
+    - 'npm run online:build'
+
+dev:
+  # 配置node服务环境
+  env:
+    node: '/usr/local/node/node-v8.11.3/bin/node'
+    npm: '/usr/local/node/node-v8.11.3/bin/npm'
+
+  # 编译命令
+  command:
+    - 'npm run clear'
+    - 'npm run init:install'
+    - 'npm run test:build'
+
+  deploy:
+    output: './*'
+    path: '/opt/{{company}}/vfe/vfe-{{projectName}}/'
+
+
+

@@ -1,0 +1,13 @@
+.ocm-section-box {
+  border: 1px solid rgba(var(--master-hue), var(--transparency));
+  margin-bottom: 25px;
+  border-radius: 6px;
+  box-shadow: 0 0 3px rgba(var(--master-hue), var(--transparency));
+  &, & .bd {
+    border-radius: 4px;
+  }
+  .bd {
+    background: #fff;
+    padding: 10px;
+  }
+}

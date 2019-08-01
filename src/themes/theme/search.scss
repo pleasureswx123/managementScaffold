@@ -1,0 +1,11 @@
+.ocm-search {
+  display: grid;
+  //grid-template-columns: repeat(3, minmax(200px, 1fr)) minmax(400px, 1fr) minmax(200px, 1fr) 80px;
+  grid-template-columns: repeat(3,minmax(150px,1fr)) minmax(400px,1fr) minmax(140px,1fr) 80px;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  align-items: center;
+  .el-date-editor .el-range-separator {
+    color: #c1c5cb;
+  }
+}

@@ -1,0 +1,37 @@
+.ocm-add-doc {
+  .docs-box {
+    padding: 5px 0 0;
+    width: 300px;
+    &.disabled {
+      li:hover {
+        background: transparent;
+      }
+      .el-icon-close {
+        display: none;
+      }
+    }
+    li {
+      overflow: hidden;
+      .left-slide, .name, .right-slide {
+        display: inline-block;
+        vertical-align: middle;
+        height: 30px;
+        line-height: 30px;
+        padding: 0 3px;
+      }
+      .el-icon-close {
+        float: right;
+        cursor: pointer;
+      }
+      .name {
+        width: 240px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+      &:hover {
+        background: #f5f7fa;
+      }
+    }
+  }
+}

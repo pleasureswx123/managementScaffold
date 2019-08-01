@@ -1,0 +1,359 @@
+* {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB",
+  "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+}
+
+*:focus {
+  outline: none !important;
+}
+
+:root,
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: left;
+  color: #2c3e50;
+  background: #fff;
+  font-size: 14px;
+}
+
+a {
+  color: #fb5300;
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+.page {
+  height: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.subPage {
+  padding: 15px;
+}
+
+.pagination {
+  padding: 10px 0;
+  text-align: right;
+}
+
+//reset
+.el-input.is-active .el-input__inner,
+.el-input__inner:focus {
+  border-color: #ffbb99;
+  outline: 0;
+}
+
+.el-textarea__inner:focus {
+  border-color: #ffbb99;
+  outline: 0;
+}
+
+.el-input__inner:hover,
+.el-textarea__inner:hover {
+  border-color: #ffbb99;
+}
+
+.el-form-item.is-success .el-input__inner,
+.el-form-item.is-success .el-input__inner:focus,
+.el-form-item.is-success .el-textarea__inner,
+.el-form-item.is-success .el-textarea__inner:focus {
+  border-color: #dcdfe6;
+}
+
+.el-form-item.is-error .el-input__inner,
+.el-form-item.is-error .el-input__inner:focus,
+.el-form-item.is-error .el-textarea__inner,
+.el-form-item.is-error .el-textarea__inner:focus,
+.el-message-box__input input.invalid,
+.el-message-box__input input.invalid:focus {
+  border-color: #ffbb99;
+}
+
+.el-dialog__headerbtn:focus .el-dialog__close,
+.el-dialog__headerbtn:hover .el-dialog__close,
+.el-message-box__headerbtn:focus .el-message-box__close,
+.el-message-box__headerbtn:hover .el-message-box__close {
+  color: #fe5200;
+}
+
+.el-form-item__error {
+  color: #fe5200;
+}
+
+.el-button--text {
+  color: #ff722d;
+}
+
+.el-button:focus,
+.el-button:hover {
+  color: #ff7936;
+  border-color: #f5c7b0;
+  background-color: #f9e6dd;
+}
+
+.el-button--default:focus,
+.el-button--default:hover {
+  color: #66686c;
+  border-color: #dcdfe6;
+  background-color: transparent;
+}
+
+.el-button--primary {
+  color: #fff;
+  background-color: #fb5300;
+  border-color: #fb5300;
+}
+
+.el-button--primary:focus,
+.el-button--primary:hover {
+  color: #fff;
+  background: #e24b00;
+  border-color: #f76219;
+}
+
+.el-button--text:focus,
+.el-button--text:hover {
+  color: #c84200;
+  border-color: transparent;
+  background-color: transparent;
+}
+
+.el-select .el-input__inner:focus {
+  border-color: #fbbd9f;
+}
+
+.el-select .el-input.is-focus .el-input__inner {
+  border-color: #fbbd9f;
+}
+
+.el-pagination__sizes .el-input .el-input__inner:hover {
+  border-color: #fbbd9f;
+}
+
+.el-radio__input.is-checked .el-radio__inner {
+  border-color: #fc5600;
+  background: #fc5600;
+}
+
+.el-radio__input.is-checked + .el-radio__label {
+  color: #ff5500;
+}
+
+.el-radio__inner:hover {
+  border-color: #ff5500;
+}
+
+.el-checkbox__input.is-checked .el-checkbox__inner,
+.el-checkbox__input.is-indeterminate .el-checkbox__inner {
+  background-color: #ff5500;
+  border-color: #ff5500;
+}
+
+.el-checkbox__inner:hover {
+  border-color: #ff5500;
+}
+
+.el-checkbox__input.is-focus .el-checkbox__inner {
+  border-color: #dcdfe6;
+}
+
+.el-checkbox__input.is-checked + .el-checkbox__label {
+  color: #fe5200;
+}
+
+.el-transfer-panel__item:hover {
+  color: #ff5f00;
+}
+
+.el-dropdown-menu__item:focus,
+.el-dropdown-menu__item:not(.is-disabled):hover {
+  background-color: #ffeee6;
+  color: #fe5200;
+}
+
+.el-button--primary.is-disabled,
+.el-button--primary.is-disabled:active,
+.el-button--primary.is-disabled:focus,
+.el-button--primary.is-disabled:hover {
+  color: #fff;
+  background-color: #dcdfe6;
+  border-color: #dcdfe6;
+}
+
+
+h2 {
+  font-size: 16px;
+  color: #f98b5a;
+  line-height: 35px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #dcdfe6;
+}
+
+:root {
+  --transparency: 1;
+  --master-hue: 246, 242, 238;
+}
+
+.mgrt10 {
+  margin-right: 10px;
+}
+
+.pdlf10 {
+  padding-left: 10px;
+}
+
+
+button[class*="vkdiconfont"]:before {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  margin-left: -16px;
+  top: 50%;
+  margin-top: -8px;
+  font-size: 15px;
+}
+
+button.vkdiconfont {
+  position: relative;
+  padding: 6px 10px 6px 23px;
+}
+
+.el-pager li.active,
+.el-pager li:hover,
+.el-select-dropdown__item.selected {
+  color: #f95415;
+}
+
+.el-pager li {
+  font-weight: normal;
+}
+
+.el-popover {
+  font-size: 12px;
+  line-height: 1.5;
+  padding: 6px 12px;
+  border: 1px solid #f7ded5;
+}
+
+.el-dialog__body {
+  padding: 10px 20px;
+}
+
+.elTabletimeAuto thead.is-group th {
+  background: #f6f2ee;
+}
+
+.el-cascader-menu__item.is-active {
+  color: #f75415;
+}
+
+.vue-toast {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border: 10px solid red;
+  padding: 20px;
+  background: lightcyan;
+}
+
+.el-tree-node__content {
+  height: 36px;
+}
+
+.treeLabel {
+  margin-right: 15px;
+}
+
+small {
+  color: #999;
+}
+
+.pie-box {
+  width: 50px;
+  height: 50px;
+  --percent: 50;
+  position: relative;
+  border-radius: 50%;
+  background: red;
+  clip-path: circle(50% at 50% 50%);
+}
+.pie-left,
+.pie-right {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+}
+.pie-left {
+  left: 0;
+}
+.pie-right {
+  left: 50%;
+}
+.pie-center {
+  position: absolute;
+  width: 85%;
+  height: 85%;
+  top: 50%;
+  left: 50%;
+  background: #fff;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #333;
+  span {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+.pie-left::before,
+.pie-right::before,
+.pie-right::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: teal;
+}
+.pie-left::before {
+  left: 100%;
+  transform-origin: left;
+  transform: rotate(calc(3.6deg * (var(--percent) - 50)));
+  opacity: calc(9999 * (var(--percent) - 50));
+}
+.pie-right::before {
+  right: 100%;
+  transform-origin: right;
+  transform: rotate(calc(3.6deg * var(--percent)));
+}
+.pie-right::after {
+  opacity: calc(9999 * (var(--percent) - 50));
+}
+.ocm-room .el-textarea .el-input__count {
+  right: 1px;
+  bottom: -15px;
+  padding: 1px;
+  line-height: 1;
+  background: transparent;
+}
+
+

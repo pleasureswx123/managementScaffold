@@ -1,0 +1,32 @@
+.ocm-pdf-list {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  padding: 20px 10px 10px;
+  .list-page, .edit-page {
+    float: left;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background: #fff;
+    transition: all ease-in 300ms;
+  }
+  .edit-page {
+    width: 0;
+    opacity: 0;
+  }
+  .list-page {
+    padding-right: 10px;
+    width: 98%;
+  }
+  &.unfold {
+    .list-page {
+      width: 40%;
+    }
+    .edit-page {
+      background: #f6f2ee;
+      width: 60%;
+      opacity: 1;
+    }
+  }
+}

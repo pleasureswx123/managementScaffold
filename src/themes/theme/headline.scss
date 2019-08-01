@@ -1,0 +1,20 @@
+.ocm-headline {
+  background: rgba(var(--master-hue), var(--transparency));
+  padding: 0 10px;
+  h3 {
+    font-size: 14px;
+    line-height: 35px;
+    color: #333;
+    display: inline-block;
+    width: 100px;
+  }
+
+  small {
+    font-size: 12px;
+    color: #999;
+  }
+
+  .slot-box {
+    display: inline-block;
+  }
+}

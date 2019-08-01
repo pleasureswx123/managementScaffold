@@ -1,0 +1,30 @@
+.ocm-wrap {
+  position: relative;
+  height: 100%;
+  color: #fff;
+  .el-header {
+    background: #655751;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .el-aside {
+    background-color: #2f3338;
+  }
+  .el-main {
+    padding: 0;
+    color: #333;
+    width: calc(100% - 231px);
+  }
+  .el-tabs--border-card > .el-tabs__header .el-tabs__item:hover {
+    color: #f95415;
+  }
+  .el-tabs--border-card > .el-tabs__header .el-tabs__item.is-active {
+    color: #f95415;
+  }
+  .elTableAuto table thead th {
+    background: #f6f2ee;
+  }
+  .main-container {
+    height: 100%;
+  }
+}

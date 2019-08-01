@@ -1,0 +1,17 @@
+.ocm-section-line {
+  overflow: hidden;
+  padding: 10px 0;
+  h3 {
+    float: left;
+    font-size: 14px;
+    font-weight: normal;
+    height: 32px;
+    line-height: 32px;
+    color: #333;
+    text-align: right;
+    padding-right: 20px;
+  }
+  .right-side {
+    overflow: hidden;
+  }
+}

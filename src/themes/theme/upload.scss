@@ -1,0 +1,15 @@
+.ocm-upload {
+  width: 500px;
+  .el-upload__tip {
+    line-height: 1.6;
+  }
+  p .ocm-add-doc {
+    display: inline-block;
+    & > button {
+      border: none;
+      color: #f85415;
+      background-color: transparent;
+      padding: 0 0 0 3px;
+    }
+  }
+}

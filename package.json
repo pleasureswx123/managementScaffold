@@ -1,0 +1,48 @@
+{
+  "name": "{{projectName}}",
+  "version": "{{version}}",
+  "description": "{{description}}",
+  "author": "shangwenxue",
+  "private": true,
+  "from": "vkdcli",
+  "scripts": {
+    "lint": "vue-cli-service lint",
+    "init:install": "npm install --unsafe-perm --registry=http://registry.vnpm.{{company}}.com.cn",
+    "dev:serve": "cross-env VUE_APP_ENVIRONMENT=stage LOCAL_HOSTNAME=test-{{projectName}}.{{company}}-qa.com.cn npm run setHost",
+    "dev:start": "vue-cli-service serve",
+    "inspect:build": "vue-cli-service inspect --mode >> ./webpack.output.js",
+    "online:build": "vue-cli-service build",
+    "test:build": "cross-env VUE_APP_ENVIRONMENT=true vue-cli-service build",
+    "clear": "rm -rf ./output && rm -rf ./node_modules && npm cache clean --force",
+    "setHost": "chmod +x setHost.sh && ./setHost.sh",
+    "mock": "node server/bin/www"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "cos-js-sdk-v5": "^0.5.13",
+    "element-ui": "^2.8.2",
+    "lodash": "^4.17.11",
+    "moment": "^2.23.0",
+    "vps-auth-login": "http://registry.vnpm.{{company}}.com.cn/vps-auth-login/download/vps-auth-login-0.1.1.tgz",
+    "vue": "^2.5.17",
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.0.0",
+    "@vue/cli-plugin-eslint": "^3.0.0",
+    "@vue/cli-service": "^3.0.0",
+    "@vue/eslint-config-standard": "^4.0.0",
+    "babel-eslint": "^10.0.1",
+    "cookie-parser": "^1.4.4",
+    "cross-env": "^5.2.0",
+    "eslint": "^5.8.0",
+    "eslint-plugin-vue": "^5.0.0-0",
+    "express": "^4.16.4",
+    "morgan": "^1.9.1",
+    "node-sass": "^4.9.0",
+    "sass-loader": "^7.0.1",
+    "vue-svg-loader": "^0.12.0",
+    "vue-template-compiler": "^2.5.17"
+  }
+}

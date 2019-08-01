@@ -1,0 +1,33 @@
+.ocm-room {
+  .width400 {
+    width: 400px;
+    margin-right: 10px;
+  }
+  .width200 {
+    width: 200px;
+    margin-right: 10px;
+  }
+  .tipsTeacherId {
+    color: red;
+    font-size: 12px;
+  }
+  .input-with-select-box .el-select .el-input {
+    width: 140px;
+  }
+  .otherInfoItem {
+    color: #616367;
+    span {
+      margin-right: 10px;
+      &::selection {
+        background-color: transparent;
+      }
+    }
+    .vkdicon-fuzhi {
+      cursor: pointer;
+      color: #ff7d4b;
+      &:hover {
+        color: #f85415;
+      }
+    }
+  }
+}

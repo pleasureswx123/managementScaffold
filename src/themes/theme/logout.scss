@@ -1,0 +1,28 @@
+.ocm-logout {
+  height: 100%;
+  font-size: 14px;
+  color: #fff;
+  .userdownIcon {
+    font-size: 22px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 35px;
+    line-height: 45px;
+    background: #6b5e57;
+    text-align: center;
+    margin-left: 10px;
+  }
+  .userCon {
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 20px;
+    span {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+  .el-dropdown-menu--small {
+    width: 120px;
+    text-align: center;
+  }
+}
