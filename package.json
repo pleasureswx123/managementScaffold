@@ -2,7 +2,7 @@
   "name": "{{projectName}}",
   "version": "{{version}}",
   "description": "{{description}}",
-  "author": "shangwenxue",
+  "author": "{{author}}",
   "private": true,
   "from": "vkdcli",
   "scripts": {
